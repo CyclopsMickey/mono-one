@@ -1,5 +1,6 @@
 // print Fahrenheit-Celsius table for fahr = 0, 20, ..., 300
 // Cyclops Mickey 2017
+// Another update test
 #include <stdio.h>
 
 int main() {
