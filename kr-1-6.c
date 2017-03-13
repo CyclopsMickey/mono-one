@@ -4,15 +4,15 @@
 int main() 
 {
         int c;
-        int iEOF;
 
-        printf("%6d\n", EOF);
-
-        while (c = getchar())
-                if (c != EOF) {
-                        //putchar(c);
-                        printf("%6d\n", c);
-                } else
-                        printf("%6d\n", c);
+        c = getchar();
+        if (c == 'x') { c = EOF; }
+        while (c != EOF) {
+                printf("%3d\n", c);
+                c = getchar();
+                if (c == 'x') c = EOF;
+        }
+        
+        printf("%3d\n", c);
         return 0;
 }
