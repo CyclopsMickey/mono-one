@@ -22,16 +22,17 @@ int main()
 	char line[MAXLINE]; /* current input line */
 	char longest[MAXLINE]; /* longest line saved here */
 	char reverse[MAXLINE];
+	
 	max = 0;
 	while ((len = jbGetline(line, MAXLINE)) > 0) {
 		if (len > max) {
 			max = len;
 			copy(longest, line);
 		}
-		
+
 		revstr(reverse, line, (int) strlen(line));
-		printf("%d %s", (int) strlen(reverse), reverse);		
-		
+		printf("%d %s", (int) strlen(reverse), reverse);	
+
 	}
 	return 0;
 }
@@ -51,7 +52,8 @@ int main()
 int jbGetline(char s[], int lim)
 {
 	int c, i;
-	for (i=0; i < lim-1 && (c=getchar())!=EOF && c!='\n'; ++i)
+	
+	for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
 		s[i] = c;
 	if (c == '\n') {
 		s[i] = c;
@@ -68,6 +70,7 @@ void copy(char to[], char from[])
 {
 	int i;
 	i = 0;
+	
 	while ((to[i] = from[i]) != '\0')
 		++i;
 }
