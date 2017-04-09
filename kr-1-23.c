@@ -12,22 +12,19 @@
 /******************************************************************************/
 int main()
 {
-        int c, n, i, j, state;
-	int idiv, irem;
-	double id;
+	int c, n, state;
 	
 	state = BOUT;
-	i = 0;
 	while ((c = getchar()) != EOF) {
 		if (c == '/') {
-			if (n = getchar() == '*') {
+			if ((n = getchar()) == '*') {
 				state = BIN;
 			} else {
 				putchar(c);
 				putchar(n);
 			}
 		} else if (c == '*') {
-			if (n = getchar() == '/') {
+			if ((n = getchar()) == '/') {
 				state = BOUT;
 			} else {
 				putchar(c);
@@ -37,5 +34,5 @@ int main()
 			putchar(c);
 	}
 	
-        printf("\nDone\n");
+	printf("\nDone\n");
 }
