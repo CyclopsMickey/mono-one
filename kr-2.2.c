@@ -12,12 +12,14 @@
 /******************************************************************************/
 int main()
 {
-	int c, i, lim;
-	char s[10]; 
+	int i, lim = 20;
+	char c;
+	char s[lim]; 
 		
 	for (i=0; i < lim-1 && (c=getchar())!=EOF && c!='\n'; ++i)
 		s[i] = c;
 
-	s[i] = '\0';
+ 	printf("Text input is %s\n",s);
+	
 	return i;
 }
