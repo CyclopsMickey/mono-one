@@ -1,0 +1,6 @@
+gcc <file name.c> -o <output file>
+
+git pull
+git add -A <file name>
+git commit -am "message"
+git push origin master
