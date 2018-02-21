@@ -4,3 +4,10 @@ git pull
 git add -A <file name>
 git commit -am "message"
 git push origin master
+
+// css mods for codeanywhere terminal 
+
+.region-center .terminal {
+  font-size: 15px !important;
+  font-family: Inconsolata!important;
+}
