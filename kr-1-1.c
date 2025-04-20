@@ -1,4 +1,4 @@
-// hello.c Test
+// hello.c
 #include <stdio.h>
  
 int main() {
